@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Taschenrechner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9455f27da9b5b3f414898c26ad25192dd403c38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54bf733c9710615e8d711a55f97cacfaeacafc3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Taschenrechner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Taschenrechner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

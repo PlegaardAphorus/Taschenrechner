@@ -48,6 +48,7 @@
             btn_del = new Button();
             btn_AC = new Button();
             btn_hochX = new Button();
+            btn_0 = new Button();
             SuspendLayout();
             // 
             // btn_7
@@ -58,6 +59,7 @@
             btn_7.TabIndex = 0;
             btn_7.Text = "7";
             btn_7.UseVisualStyleBackColor = true;
+            btn_7.Click += btn_7_Click;
             // 
             // btn_8
             // 
@@ -67,6 +69,7 @@
             btn_8.TabIndex = 1;
             btn_8.Text = "8";
             btn_8.UseVisualStyleBackColor = true;
+            btn_8.Click += btn_8_Click;
             // 
             // btn_9
             // 
@@ -76,6 +79,7 @@
             btn_9.TabIndex = 2;
             btn_9.Text = "9";
             btn_9.UseVisualStyleBackColor = true;
+            btn_9.Click += btn_9_Click;
             // 
             // btn_6
             // 
@@ -85,6 +89,7 @@
             btn_6.TabIndex = 5;
             btn_6.Text = "6";
             btn_6.UseVisualStyleBackColor = true;
+            btn_6.Click += btn_6_Click;
             // 
             // btn_5
             // 
@@ -94,6 +99,7 @@
             btn_5.TabIndex = 4;
             btn_5.Text = "5";
             btn_5.UseVisualStyleBackColor = true;
+            btn_5.Click += btn_5_Click;
             // 
             // btn_4
             // 
@@ -103,6 +109,7 @@
             btn_4.TabIndex = 3;
             btn_4.Text = "4";
             btn_4.UseVisualStyleBackColor = true;
+            btn_4.Click += btn_4_Click;
             // 
             // btn_3
             // 
@@ -112,6 +119,7 @@
             btn_3.TabIndex = 8;
             btn_3.Text = "3";
             btn_3.UseVisualStyleBackColor = true;
+            btn_3.Click += btn_3_Click;
             // 
             // btn_2
             // 
@@ -121,6 +129,7 @@
             btn_2.TabIndex = 7;
             btn_2.Text = "2";
             btn_2.UseVisualStyleBackColor = true;
+            btn_2.Click += btn_2_Click;
             // 
             // btn_1
             // 
@@ -130,6 +139,7 @@
             btn_1.TabIndex = 6;
             btn_1.Text = "1";
             btn_1.UseVisualStyleBackColor = true;
+            btn_1.Click += btn_1_Click;
             // 
             // btn_mul
             // 
@@ -139,6 +149,7 @@
             btn_mul.TabIndex = 11;
             btn_mul.Text = "*";
             btn_mul.UseVisualStyleBackColor = true;
+            btn_mul.Click += btn_mul_Click;
             // 
             // btn_sub
             // 
@@ -148,6 +159,7 @@
             btn_sub.TabIndex = 10;
             btn_sub.Text = "-";
             btn_sub.UseVisualStyleBackColor = true;
+            btn_sub.Click += btn_sub_Click;
             // 
             // btn_add
             // 
@@ -157,6 +169,7 @@
             btn_add.TabIndex = 9;
             btn_add.Text = "+";
             btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
             // btn_div
             // 
@@ -166,17 +179,19 @@
             btn_div.TabIndex = 12;
             btn_div.Text = "/";
             btn_div.UseVisualStyleBackColor = true;
+            btn_div.Click += btn_div_Click;
             // 
             // tbx_calculation
             // 
             tbx_calculation.Location = new Point(42, 89);
             tbx_calculation.Name = "tbx_calculation";
+            tbx_calculation.ReadOnly = true;
             tbx_calculation.Size = new Size(339, 23);
             tbx_calculation.TabIndex = 13;
             // 
             // btn_sqrt
             // 
-            btn_sqrt.Location = new Point(204, 205);
+            btn_sqrt.Location = new Point(204, 234);
             btn_sqrt.Name = "btn_sqrt";
             btn_sqrt.Size = new Size(75, 23);
             btn_sqrt.TabIndex = 14;
@@ -185,16 +200,16 @@
             // 
             // btn_quadrat
             // 
-            btn_quadrat.Location = new Point(123, 205);
+            btn_quadrat.Location = new Point(123, 234);
             btn_quadrat.Name = "btn_quadrat";
             btn_quadrat.Size = new Size(75, 23);
             btn_quadrat.TabIndex = 15;
-            btn_quadrat.Text = "X²";
+            btn_quadrat.Text = "x²";
             btn_quadrat.UseVisualStyleBackColor = true;
             // 
             // btn_calc
             // 
-            btn_calc.Location = new Point(42, 234);
+            btn_calc.Location = new Point(306, 234);
             btn_calc.Name = "btn_calc";
             btn_calc.Size = new Size(75, 23);
             btn_calc.TabIndex = 16;
@@ -203,7 +218,7 @@
             // 
             // btn_del
             // 
-            btn_del.Location = new Point(123, 234);
+            btn_del.Location = new Point(123, 205);
             btn_del.Name = "btn_del";
             btn_del.Size = new Size(75, 23);
             btn_del.TabIndex = 17;
@@ -212,27 +227,38 @@
             // 
             // btn_AC
             // 
-            btn_AC.Location = new Point(204, 234);
+            btn_AC.Location = new Point(204, 205);
             btn_AC.Name = "btn_AC";
             btn_AC.Size = new Size(75, 23);
             btn_AC.TabIndex = 18;
             btn_AC.Text = "AC";
             btn_AC.UseVisualStyleBackColor = true;
+            btn_AC.Click += btn_AC_Click;
             // 
             // btn_hochX
             // 
-            btn_hochX.Location = new Point(42, 205);
+            btn_hochX.Location = new Point(42, 234);
             btn_hochX.Name = "btn_hochX";
             btn_hochX.Size = new Size(75, 23);
             btn_hochX.TabIndex = 19;
             btn_hochX.Text = "xˣ";
             btn_hochX.UseVisualStyleBackColor = true;
             // 
+            // btn_0
+            // 
+            btn_0.Location = new Point(42, 205);
+            btn_0.Name = "btn_0";
+            btn_0.Size = new Size(75, 23);
+            btn_0.TabIndex = 20;
+            btn_0.Text = "0";
+            btn_0.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(427, 450);
+            Controls.Add(btn_0);
             Controls.Add(btn_hochX);
             Controls.Add(btn_AC);
             Controls.Add(btn_del);
@@ -281,5 +307,6 @@
         private Button btn_del;
         private Button btn_AC;
         private Button btn_hochX;
+        private Button btn_0;
     }
 }
